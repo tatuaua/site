@@ -10,13 +10,13 @@
             <div class="center">
                 <img class ="puppy" src="thumbnails/puppy1.jpg">
                 <div class="indeterminate-progress-bar">
-                    <div class="indeterminate-progress-bar__progress"></div>
+                    <div id="indeterminate-progress-bar__progress" class="indeterminate-progress-bar__progress"></div>
                 </div>
             </div>
         </div> 
         <div class="buttondiv">
             <div class="center2">
-                    <button class="fixbutton">
+                    <button onclick = "changeTime()" id="fixbutton" class="fixbutton">
                         Click here to fix the API
                     </button>
             </div>
@@ -28,5 +28,13 @@
             Youtube
         </a>
         <!--img class = "puppy" src = "thumbnails/puppy1.jpg"-->
+        <script>
+            let duration = 30;
+            function changeTime(){
+                document.getElementById("indeterminate-progress-bar__progress").style.animationDuration = duration + 's';
+                duration = duration * 1.5;
+                console.log(duration);
+            }
+        </script>
     </body>
 </html>

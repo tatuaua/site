@@ -91,7 +91,7 @@
     width: 50%;
 
     /* Move the bar infinitely */
-    animation-duration: 2s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-name: indeterminate-progress-bar;
 }
