@@ -1,0 +1,148 @@
+.puppy{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-width: 2px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center2{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.fixbutton{
+    position: relative;
+    color: rgb(39, 39, 39);
+    border: none;
+    background-color: #2aff38;
+    font-size: 30px;
+    font-weight:bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, padding 0.1s;
+
+}
+
+.fixbutton:hover{
+    background-color: white;
+    color: #2aff38 ;
+}
+
+.fixbutton:active{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.stuffdiv{
+    position: relative;
+    height: 400px;
+}
+
+.indeterminate-progress-bar {
+
+    margin-top: 50px;
+    width: 200px;
+    /* Color */
+    background-color: #d1d5db;
+
+    /* Rounded border */
+    border-radius: 9999px;
+
+    /* Size */
+    height: 1rem;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.indeterminate-progress-bar__progress {
+    /* Color */
+    background-color: #2aff38;
+
+    /* Rounded border */
+    border-radius: 9999px;
+
+    /* Absolute position */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 50%;
+
+    /* Move the bar infinitely */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: indeterminate-progress-bar;
+}
+
+@keyframes indeterminate-progress-bar {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+.buttondiv{
+    position: relative;
+    height: 100px;
+}
+
+.github{
+    font-family: Arial;
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+    position: fixed;
+    bottom: 10px;
+    left:51%;
+    transition: background-color 0.2s, border-radius 0.2s, padding 0.2s;
+}
+
+.github:hover{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    color:rgb(39, 39, 39);
+}
+
+
+.yt{
+    font-family: Arial;
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+    position: fixed;
+    bottom: 10px;
+    right: 51%;
+    transition: background-color 0.2s, border-radius 0.2s, padding 0.2s;
+}
+
+.yt:hover{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
